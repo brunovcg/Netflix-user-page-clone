@@ -75,16 +75,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 8vh;
+		width: 186px
 		
 	}
 
 	li figure {
-		padding-bottom: 1vh;;
+		padding-bottom: 1vh;
+		
 	}
 
-	li figure img { 
+	/* li figure img { 
 		width: 186px ;
-	}
+	} - ALTERADO POR ERRO*/
 
 	li figure img:hover{
 		border:solid 1px var(--text-able-color);
@@ -194,9 +196,9 @@ margin: 1vw;
 
 }
 
-li figure img { 
+/* li figure img { 
 	width: 186px ;
-}
+}  -----ALTERADO POR ERRO-----*/
 
 section header h2 {
 	font-size: 3em;
