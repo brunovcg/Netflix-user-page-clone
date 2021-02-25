@@ -14,26 +14,199 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+
+
 /* VARIÁVEIS */
 :root{
-  
+	--background-color: #141414;
+	--text-unable-color: rgb(121, 117, 117);
+	--text-able-color: rgb(241, 235, 235);
+  }
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: 'Helvetica Neue', "Helvetica", "Arial", "sans-serif";
+	list-style: none;
+	
 }
+
+
 
 /*BODY*/
 	body{
+		background-color: var(--background-color);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 5vh;;
+		width: 100vw;
+		max-width: 100vw;
+		}
 
+	section {
+		min-height: 858px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+			}
+
+	section header h2 {
+		display: flex;
+		justify-content: center;
+		font-size: 1,5em;
+		padding-bottom: 5vh;
+		color: var(--text-able-color)
 	}
+
+	h3 {
+		text-align: center;
+		font-size: 1.4em;
+		color: var(--text-unable-color)
+	
+		}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 8vh;
+		
+	}
+
+	li figure {
+		padding-bottom: 1vh;;
+	}
+
+	li figure img { 
+		width: 186px ;
+	}
+
+	li figure img:hover{
+		border:solid 1px var(--text-able-color);
+	}
+
+	li:hover h3{
+		color: var(--text-able-color);
+	}
+
+	figure {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	figcaption { 
+		display: none;
+	}
+
+	.addPerfil figure img {
+		padding: 40px;
+		width: 60%;
+	}
+
+
 
 /*TOPO*/
-	header.topo{
-		
+	
+	.topo img {
+		width: 80%;
 	}
+
+	.topo figure {
+		display: flex;
+		/* justify-content: center ; */
+		align-items: center;
+		padding: 12vw;
+		}
+
+	.topo figure figcaption {
+		display: none;
+	}
+		
+
 
 /*RODAPÉ*/
-	
+footer button {
+	background-color: var(--background-color);
+	color: var(--text-able-color);
+	padding: 8px 30px;
+	border: solid 1px var(--text-able-color);
+	font-size: 1.8em;
+}
 
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+footer button:hover {
+	background-color: var(--text-able-color);
+	color: var(--background-color);
+	border: solid 1px var(--background-color);
 	}
 
+
+
+
+
+
+
+/* ----------------------------DESKTOP.VERSION-------------------------------------- */
+
+@media (min-width: 600px) {
+
+.topo {
+width: 100vw;
+height: 20vh;
+
+}
+
+.topo img {
+	width: 10%;
+}
+
+.topo figure {
+	display: flex;
+	justify-content: flex-start;
+	padding: 5vh;
+	align-items: flex-start;
+	}
+
+section{
+	height: 70vh;
+	min-height: 70vh;
+}
+
+section ul {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+ul {
+	width: 858px;
+	max-width: 858px;
+}
+
+li {
+margin: 1vw;
+
+}
+
+li figure img { 
+	width: 186px ;
+}
+
+section header h2 {
+	font-size: 3em;
+	
+}
+
+
+footer button {
+	
+	margin-top: 10vh;}
+
+
+}
